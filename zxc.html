@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #e0eafc, #cfdef3);
+            color: #333;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #34495e;
+        }
+
+        /* Gallery Container */
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Gallery Grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        /* Image Styling */
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover Effects */
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Captions */
+        figure {
+            text-align: center;
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Stunning Photo Gallery</h1>
+        <p>Explore a collection of beautiful moments By Rajveer kaushik</p>
+    </header>
+    <main class="gallery-container">
+        <section class="gallery">
+            <figure>
+                <img src= "C:\Users\student\Desktop\download.jpg"alt="A serene landscape">
+                
+                <figcaption>Serene Landscape</figcaption>
+            </figure>
+            <figure>
+                <img src="C:\Users\student\Desktop\images.jpg"alt="A vibrant sunset">
+                <figcaption>Vibrant Sunset</figcaption>
+            </figure>
+            <figure>
+                <img src="C:\Users\student\Desktop\download (1).jpg" alt="A peaceful beach">
+                <figcaption>Peaceful Beach</figcaption>
+            </figure>
+            <figure>
+                <img src="C:\Users\student\Desktop\360_F_961016962_GZGDoSmnWqhUj571Q1ZFhKzIDWjQYKM0.jpg"alt="A snow-capped mountain">
+                <figcaption>Snow-Capped Mountain</figcaption>
+            </figure>
+            <figure>
+                <img src="C:\Users\student\Desktop\2b856ba3d8cb1990eb6bb3e025e408ab.jpg" alt="Harry">
+                <figcaption>Harry</figcaption>
+            </figure>
+            <figure>
+               
+            </figure>
+        </section>
+    </main>
+</body>
+</html>
